@@ -28,22 +28,19 @@ First, be sure you have [`plop`][plop] installed. Then, add the following line t
 plop.load("@bradgarropy/plop-generator-react-context")
 ```
 
-Now you'll have access to the `hook` generator as shown below.
+Now you'll have access to the `context` generator as shown below.
 
 ```bash
-plop hook
+plop context
 ```
 
-The `hook` generator scaffolds a hook, including tests, and adds it to the `index.ts` file for easy importing. The resulting directory looks like this for a hook named `useHook`.
+The `context` generator scaffolds a new context, including a consumer hook, and adds it to the `index.ts` file for easy importing. The resulting directory looks like this for a context named `App`.
 
 ```text
 src
-└── hooks
-   ├── index.ts
-   └── useHook
-      ├── index.ts
-      ├── useHook.tsx
-      └── useHook.test.tsx
+└── context
+   ├── App.tsx
+   └── index.ts
 ```
 
 ## ❔ Questions
