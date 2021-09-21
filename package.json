@@ -1,0 +1,78 @@
+{
+    "name": "@bradgarropy/plop-generator-react-context",
+    "version": "0.0.1",
+    "description": "💧 plop generator react context",
+    "keywords": [
+        "node",
+        "typescript",
+        "eslint",
+        "prettier",
+        "jest",
+        "plop",
+        "plop-pack",
+        "plop-generator",
+        "react",
+        "context"
+    ],
+    "homepage": "https://github.com/bradgarropy/plop-generator-react-context",
+    "bugs": {
+        "url": "https://github.com/bradgarropy/plop-generator-react-context/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Brad Garropy",
+        "email": "bradgarropy@gmail.com",
+        "url": "https://bradgarropy.com"
+    },
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bradgarropy/plop-generator-react-context"
+    },
+    "scripts": {
+        "start": "tsc --watch",
+        "build": "tsc",
+        "postbuild": "cp -r src/templates dist/templates",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --check .",
+        "format:fix": "prettier --write .",
+        "test": "jest --passWithNoTests",
+        "test:watch": "jest --passWithNoTests --watch",
+        "contributors": "all-contributors generate",
+        "prepare": "npm run build"
+    },
+    "dependencies": {
+        "tslib": "^2.3.1"
+    },
+    "peerDependencies": {
+        "plop": "^2.7.4"
+    },
+    "devDependencies": {
+        "@bradgarropy/eslint-config": "^1.1.0",
+        "@bradgarropy/eslint-config-typescript": "^1.0.2",
+        "@types/jest": "^27.0.2",
+        "@typescript-eslint/eslint-plugin": "^4.31.2",
+        "@typescript-eslint/parser": "^4.31.2",
+        "all-contributors-cli": "^6.20.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "husky": "^4.3.8",
+        "jest": "^27.2.1",
+        "lint-staged": "^10.5.4",
+        "node-plop": "^0.26.2",
+        "plop": "^2.7.4",
+        "prettier": "^2.4.1",
+        "ts-jest": "^27.0.5",
+        "typescript": "^4.4.3"
+    },
+    "engines": {
+        "node": ">=10"
+    }
+}
