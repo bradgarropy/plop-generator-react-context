@@ -1,0 +1,7 @@
+import {renderHook} from "@testing-library/react-hooks"
+import { use{{pascalCase name}} } from "hooks"
+
+test("renders hook", () => {
+    const {result} = renderHook(() => use{{pascalCase name}}())
+    expect(result.current).toBeUndefined()
+})

@@ -1,0 +1,9 @@
+import {useContext} from "react"
+import { {{pascalCase name}}ContextType, {{pascalCase name}}Context } from "context"
+
+const use{{pascalCase name}} = (): {{pascalCase name}}ContextType => {
+    const {{camelCase name}}Ctx = useContext({{pascalCase name}}Context)
+    return {{camelCase name}}Ctx
+}
+
+export default use{{pascalCase name}}
