@@ -7,4 +7,4 @@ const generator = (plop: NodePlopAPI): void => {
     plop.setGenerator("context", context)
 }
 
-export default generator
+export = generator
